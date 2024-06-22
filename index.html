@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Manager</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="bookmark-logo"
+            ><img id="siteLogo" src="/images/logo-bookmark.svg" alt="Bookmark logo"
+          /></a>
+          <button
+            class="desktop-nav-button"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              id="navButton"
+              class="icon-hamburger"
+              src="/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation">
+            <a href="#" class="bookmark-logo-mobile"
+              ><img src="/images/logo-bookmark-mobile.svg" alt="Bookmark logo"
+            /></a>
+            <ul id="primary-navigation" aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="nav-button">Login</a></li>
+            </ul>
+            <ul class="mobile-socials">
+              <li>
+                <a href=""><img src="/images/icon-facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="/images/icon-twitter.svg" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="padding-block-900">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-semi-bold">A Simple Bookmark Manager</h1>
+              <p class="grey-text">
+                A clean and simple interface to organize your favourite websites. Open a new browser
+                tab and see your sites load instantly. Try it for free.
+              </p>
+              <div class="hero-buttons">
+                <button class="blue-button">Get it on Chrome</button>
+                <button class="white-button">Get it on Firefox</button>
+              </div>
+            </div>
+            <div>
+              <img src="/images/illustration-hero.svg" alt="hero image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="padding-block-900">
+        <div class="small-container">
+          <div class="features">
+            <div class="flow">
+              <h2 class="center fs-secondary-heading fw-semi-bold">Features</h2>
+
+              <p class="center grey-text">
+                Our aim is to make it quick and easy for you to access your favourite websites. Your
+                bookmarks sync between your devices so you can access them on the go.
+              </p>
+            </div>
+            <div class="padding-block-700">
+              <ul class="features-list" role="list">
+                <li><a href="#">Simple Bookmarking</a></li>
+                <li><a href="#">Speedy Searching</a></li>
+                <li><a href="#">Easy Sharing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <img src="/images/illustration-features-tab-1.svg" alt="" />
+            </div>
+            <div class="flow">
+              <h2 class="fs-secondary-heading fw-semi-bold">Bookmard in one click</h2>
+              <p class="grey-text">
+                Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+                you complete control over how you manage your favourite sites.
+              </p>
+
+              <button class="blue-button">More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="padding-block-900">
+        <div class="small-container">
+          <div class="flow">
+            <h2 class="center fs-secondary-heading fw-semi-bold">Download the extension</h2>
+
+            <p class="center grey-text">
+              We’ve got more browsers in the pipeline. Please do let us know if you’ve got a
+              favourite you’d like us to prioritize.
+            </p>
+          </div>
+        </div>
+        <div class="medium-container padding-block-700">
+          <div class="cards">
+            <div class="card">
+              <div><img src="/images/logo-chrome.svg" alt="" /></div>
+              <div class="card-text | flow">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 62</p>
+              </div>
+              <div><img src="/images/bg-dots.svg" alt="" /></div>
+              <button id="chromeButton" class="blue-button">Add & Install Extension</button>
+            </div>
+
+            <div class="card">
+              <div><img src="/images/logo-firefox.svg" alt="" /></div>
+              <div class="card-text | flow">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 55</p>
+              </div>
+              <div><img src="/images/bg-dots.svg" alt="" /></div>
+              <button id="firfoxButton" class="blue-button">Add & Install Extension</button>
+            </div>
+
+            <div class="card">
+              <div><img src="/images/logo-opera.svg" alt="" /></div>
+              <div class="card-text | flow">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 46</p>
+              </div>
+              <div><img src="/images/bg-dots.svg" alt="" /></div>
+              <button id="operaButton" class="blue-button">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faqs-section | padding-block-900">
+        <div class="small-container">
+          <div class="faqs-intro | flow">
+            <h2 class="fs-secondary-heading fw-semi-bold">Frequently Asked Questions</h2>
+
+            <p class="grey-text">
+              Here are some of our FAQs. If you have any other questions you’d like answered please
+              feel free to email us.
+            </p>
+          </div>
+          <div class="faqs">
+            <article>
+              <div class="question">
+                <h3>What is Bookmark?</h3>
+                <img src="/images/icon-arrow.svg" alt="" />
+              </div>
+
+              <p class="answer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
+                ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              </p>
+            </article>
+            <article>
+              <div class="question">
+                <h3>How can I request a new browser?</h3>
+                <img src="/images/icon-arrow.svg" alt="" />
+              </div>
+              <p class="answer">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                imperdiet.
+              </p>
+            </article>
+            <article>
+              <div class="question">
+                <h3>Is there a mobile app?</h3>
+                <img src="/images/icon-arrow.svg" alt="" />
+              </div>
+              <p class="answer">
+                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor,
+                ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet
+                pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </article>
+
+            <article>
+              <div class="question">
+                <h3>What about other Chromium browsers?</h3>
+                <img src="/images/icon-arrow.svg" alt="" />
+              </div>
+              <p class="answer">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod
+                dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+              </p>
+            </article>
+          </div>
+          <button id="faqInfoButton" class="blue-button">More Info</button>
+        </div>
+      </section>
+
+      <section class="cta | padding-block-900 bg-primary-400">
+        <div class="small-container">
+          <div class="cta-description | flow">
+            <strong>35,000+ already joined</strong>
+
+            <h2 class="center">Stay up-to-date with what we’re doing</h2>
+            <form action="">
+              <input type="email" required placeholder="Enter your email address" />
+              <button class="orange-button">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <nav class="footer-nav">
+            <div class="left">
+              <a href=""><img src="/images/logo-footer.svg" alt="" /></a>
+              <ul aria-label="Footer" class="links footer-nav-links">
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+            <ul class="footer-socials links">
+              <li>
+                <a href=""><img src="/images/icon-facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="/images/icon-twitter.svg" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
