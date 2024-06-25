@@ -20,9 +20,9 @@
   --fs-400: 0.875rem;
   --fs-500: 0.9375rem;
   --fs-600: 1rem;
-  --fs-700: 1.875rem;
+  --fs-700: clamp(1.3rem, 1.1673rem + 0.5662vw, 1.875rem);
   --fs-800: 2.5rem;
-  --fs-900: 3.5rem;
+  --fs-900: clamp(1.6rem, 1.1615rem + 1.8708vw, 3.5rem);
 
   --fs-body: var(--fs-400);
   --fs-primary-heading: var(--fs-900);
@@ -384,10 +384,7 @@ article {
 
   &:last-child {
     border-bottom: 1px solid var(--clr-neutral-400);
-  }
-
-  button {
-    margin: 0 auto;
+    text-align: left;
   }
 }
 .question {
@@ -430,7 +427,6 @@ article p {
   }
 
   input[type="email"] {
-    /* height: 100%; */
     border-radius: var(--size-100);
     border: none;
     padding: 0.8em 1.4em;
@@ -544,8 +540,26 @@ footer {
     display: block;
   }
 
+  .cta {
+    h2 {
+      margin-top: 10px !important;
+      margin-bottom: var(--size-400);
+      font-size: var(--size-500);
+    }
+  }
+  form {
+    input,
+    button {
+      width: 100%;
+      height: 100%;
+    }
+  }
   .footer-nav-links {
     flex-direction: column;
+  }
+
+  article .question:last-child {
+    text-align: left;
   }
   .footer-nav,
   .left {
