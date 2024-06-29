@@ -357,6 +357,15 @@ BUTTONS
   width: 100%;
 }
 
+.features-list li {
+  width: 100%;
+  padding: 1rem;
+  font-size: var(--size-400);
+  font-weight: var(--fw-semi-bold);
+  a {
+    text-decoration: none;
+  }
+}
 /* CARDS SECTION */
 
 .cards {
@@ -740,12 +749,12 @@ footer {
   .top-bg {
     z-index: -1;
     position: absolute;
-    width: 34%;
+    width: 38%;
     margin: 0 auto;
     background-color: var(--clr-primary-400);
-    height: 280px;
-    top: 17.5rem;
+    height: 330px;
+    top: 18.5rem;
     right: 0;
-    border-bottom-left-radius: 8rem;
+    border-bottom-left-radius: 9rem;
   }
 }

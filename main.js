@@ -3,6 +3,7 @@ const desktopSiteLogo = document.getElementById("siteLogo");
 const mobileSiteLogo = document.querySelector(".bookmark-logo-mobile");
 const navigation = document.querySelector(".primary-navigation");
 const navWrapper = document.querySelector(".nav-wrapper");
+const featureImage = document.querySelector(".feature-img");
 
 let isOpen = false;
 
@@ -40,3 +41,11 @@ navButton.addEventListener("click", () => {
   setButtonSrc(isOpen);
   showMobileMenu(isOpen);
 });
+
+const imageSrcMap = [
+  {
+    bookmarking: "1.svg",
+    searching: "2.svg",
+    sharing: "3.svg",
+  },
+];

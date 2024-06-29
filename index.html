@@ -40,10 +40,10 @@
               ><img src="/images/logo-bookmark-mobile.svg" alt="Bookmark logo"
             /></a>
             <ul id="primary-navigation" aria-label="Primary" role="list" class="nav-list">
-              <li><a href="#">Features</a></li>
+              <li><a href="#featureSection">Features</a></li>
               <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" class="nav-button">Login</a></li>
+              <li><a href="#contactSection">Contact</a></li>
+              <li><a href="#heroSection" class="nav-button">Login</a></li>
             </ul>
             <ul class="mobile-socials">
               <li>
@@ -59,7 +59,7 @@
     </header>
 
     <main>
-      <section class="padding-block-900">
+      <section id="hero" class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div class="| flex-col flow">
@@ -81,7 +81,7 @@
         </div>
       </section>
 
-      <section class="padding-block-900">
+      <section id="featureSection" class="padding-block-900">
         <div class="small-container">
           <div class="features">
             <div class="flow">
@@ -94,9 +94,13 @@
             </div>
             <div class="padding-block-700">
               <ul class="features-list" role="list">
-                <li><a href="#">Simple Bookmarking</a></li>
-                <li><a href="#">Speedy Searching</a></li>
-                <li><a href="#">Easy Sharing</a></li>
+                <hr />
+                <li class="bookmarking"><a href="#">Simple Bookmarking</a></li>
+                <hr />
+                <li class="searching"><a href="#">Speedy Searching</a></li>
+                <hr />
+                <li class="sharing"><a href="#">Easy Sharing</a></li>
+                <hr />
               </ul>
             </div>
           </div>
@@ -104,7 +108,7 @@
         <div class="container">
           <div class="even-columns features-flip">
             <div class="features-image">
-              <img src="/images/illustration-features-tab-1.svg" alt="" />
+              <img class="feature-img" src="/images/illustration-features-tab-1.svg" alt="" />
             </div>
             <div class="| flex-col flow">
               <h2 class="fs-secondary-heading fw-semi-bold">Bookmard in one click</h2>
@@ -227,7 +231,7 @@
         </div>
       </section>
 
-      <section class="cta | padding-block-900 bg-primary-400">
+      <section id="contactSection" class="cta | padding-block-900 bg-primary-400">
         <div class="small-container">
           <div class="cta-description | flow">
             <strong>35,000+ already joined</strong>
