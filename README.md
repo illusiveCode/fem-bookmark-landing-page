@@ -23,9 +23,10 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 ### What I learned
 
--
--
--
+- Responisve landing page design with media queries
+- Custom containers
+- Utility classes in CSS and variables for fonts, colours and sizing
+- Updating styles with JS
 
 ## Author
 
