@@ -42,6 +42,7 @@ navButton.addEventListener("click", () => {
   showMobileMenu(isOpen);
 });
 
+// TODO map the feature links to different images when clicked on
 const imageSrcMap = [
   {
     bookmarking: "1.svg",

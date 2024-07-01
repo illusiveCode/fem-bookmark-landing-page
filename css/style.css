@@ -207,6 +207,10 @@ p {
   font-size: clamp(1rem, 0.9538rem + 0.1969vw, 1.2rem);
 }
 
+hr {
+  display: none;
+}
+
 .top-bg {
   z-index: -1;
   width: 44rem;
@@ -357,13 +361,23 @@ BUTTONS
   width: 100%;
 }
 
+.features-list {
+  display: flex;
+}
 .features-list li {
   width: 100%;
+  text-align: center;
   padding: 1rem;
   font-size: var(--size-400);
   font-weight: var(--fw-semi-bold);
+  border-bottom: 1px solid var(--clr-accent-400);
   a {
     text-decoration: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-bottom: 4px solid var(--clr-accent-400);
   }
 }
 /* CARDS SECTION */
@@ -380,11 +394,16 @@ BUTTONS
   max-width: 270px;
   min-height: 350px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   border-radius: var(--size-400);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  p {
+    font-size: var(--size-400);
+  }
 
   button {
     padding-inline: var(--size-600);
@@ -598,6 +617,9 @@ footer {
 
   .features-flip {
     flex-direction: column;
+  }
+  .features-list {
+    display: block;
   }
   .desktop-nav-button {
     display: block;
