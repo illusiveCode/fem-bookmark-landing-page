@@ -4,6 +4,8 @@ const mobileSiteLogo = document.querySelector(".bookmark-logo-mobile");
 const navigation = document.querySelector(".primary-navigation");
 const navWrapper = document.querySelector(".nav-wrapper");
 const featureImage = document.querySelector(".feature-img");
+const faqQuestion = document.querySelectorAll(".question");
+const faqAnswer = document.querySelector(".answer");
 
 let isOpen = false;
 
@@ -40,6 +42,27 @@ navButton.addEventListener("click", () => {
   isOpen = !isOpen;
   setButtonSrc(isOpen);
   showMobileMenu(isOpen);
+});
+
+faqQuestion.forEach((question) => {
+  const toggleAnswer = () => {
+    const answer = question.nextElementSibling;
+    answer.toggleAttribute("hidden");
+
+    const arrowIcon = question.querySelector(".arrow-icon");
+    if (answer.hasAttribute("hidden")) {
+      arrowIcon.style.transform = "rotate(0deg)";
+    } else {
+      arrowIcon.style.transform = "rotate(180deg)";
+    }
+  };
+
+  question.addEventListener("click", toggleAnswer);
+  question.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      toggleAnswer();
+    }
+  });
 });
 
 // TODO map the feature links to different images when clicked on

@@ -380,6 +380,16 @@ BUTTONS
     border-bottom: 4px solid var(--clr-accent-400);
   }
 }
+
+.answer {
+  margin-top: var(--size-400);
+  color: var(--clr-neutral-400);
+  text-align: left;
+}
+.question:focus {
+  color: var(--clr-accent-400);
+}
+
 /* CARDS SECTION */
 
 .cards {
@@ -465,10 +475,6 @@ article {
 
 .question img:has(.flow) {
   margin-top: 0;
-}
-
-article p {
-  display: none;
 }
 
 /* CTA SECTION */
